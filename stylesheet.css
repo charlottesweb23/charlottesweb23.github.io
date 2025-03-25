@@ -1,0 +1,165 @@
+/* See: https://stackoverflow.com/questions/1875852/how-can-i-define-colors-as-variables-in-css */
+:root {
+    --highlight-color:  #D50000;
+    --light-color: #2a2a2a;
+}
+
+
+a {
+    all: unset;
+}
+
+body {
+    margin: 0;
+}
+
+
+
+
+.title-font {
+    font-family: 'Montserrat';
+    font-size: 52px;
+    color: var(--highlight-color);
+    margin: 40px 0 30px 0;
+    font-weight: 300;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-font {
+    font-family: 'Montserrat';
+    font-size: 17px;
+    font-style: italic;
+    font-weight: 100;
+    margin: 0;
+    color: var(--light-color);
+    border-bottom: 1px solid rgba(1, 1, 1, 0);
+    /*transition: 0.2s;*/
+}
+
+.menu-font:hover {
+    color: var(--highlight-color);
+    cursor: pointer;
+    border-bottom: 1px solid var(--highlight-color);
+}
+
+
+.menubar {
+    width: 100%;
+    max-width: 800px;
+    margin: auto auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.background {
+    background-color: #FFFDFD;
+    display: flex;
+    flex-direction: column;
+    /* Make the background fill the entire view*/
+    height: 100vh;
+}
+
+.homepage-image {
+    width: 100%;
+}
+
+.homepage-image-container {
+    width: 300px;
+    flex-shrink: 1;
+    /* I want the "I" in  "I am..." to be perfectly aligned with the top of the picture
+       the 3px makes sure that happens */
+    margin: 3px 20px 0 15px;
+}
+
+.homepage-text-container {
+    width: calc(300px * 2);
+    flex-shrink: 3;
+    margin-right: 5px;
+}
+
+.normal-text {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    margin-top: 0;
+    font-weight: 300;
+}
+
+.normal-text:last-child {
+    margin-bottom: 0;
+}
+
+.text-link {
+    border-bottom: 1px solid var(--highlight-color);
+}
+
+.text-link:hover {
+    color:  var(--highlight-color);
+    cursor: pointer;
+}
+
+.homepage {
+    display: flex;
+    /* This makes the homepage part take up all the space */
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 55px 0 40px 0;
+}
+
+
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-attachment: scroll;
+    margin: auto auto;
+}
+
+.footer-outer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+.footer-inner {
+    width: 90%;
+    border-top: 1px dashed #707070;
+}
+
+.footer-text {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 100;
+    text-align: right;
+    margin: 10px 5px 20px 0;
+    /*color: var(--light-color);*/
+}
+
+
+
+
+
+
+.tutorial-page {
+    display: flex;
+    /* This makes the homepage part take up all the space */
+    flex: 1;
+    flex-direction: column;    
+    justify-content: flex-start;
+    align-items: center;
+    margin: 55px 0 40px 0;
+}
+
+.section-header { 
+    font-family: 'Montserrat';
+    font-size: 42px;
+    text-align: center;
+}
